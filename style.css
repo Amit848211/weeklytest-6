@@ -1,0 +1,739 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    color: black;
+    width: 100vw;
+    position: relative;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height: .9rem;
+    background-color: black;
+}
+.navbar{
+    width: 100%;
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    background-color: #FFFFFF;
+    position: fixed;
+    z-index: 300;
+    box-shadow: 5px 0 15px #56565757;
+}
+.navbar img{
+    height: 3rem;
+    width: 12rem;
+}
+.navbar .first{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .7rem;
+    width:70%;
+    padding-right: 13%;
+}
+.navbar .second{
+    width: 10%;
+    height: 100%;
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding-right: 1%;
+    padding-left: 4%;
+}
+.navbar .second li{
+    font-size: 1.5rem;
+    
+}
+.navbar ul li{
+    font-weight: 600;
+    font-family:  Roboto,sans-serif;;
+}
+.navbar ul form select{
+    width: 1rem;
+    height: 2rem;
+    border: hidden;
+    margin-left: -1rem;
+    color: lightgray;
+   
+}
+.image-container{
+    
+    width: 100%;
+    height: 200vh;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(2,50%);
+    overflow-x: hidden;
+    
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.image-container > div:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+.image-container .image{
+    width:250px;
+    height:65px;
+}
+.image-container p{
+    font-size: 1.35rem;
+    margin-top: 10px;
+    text-align: center;
+}
+.image-container .second div{
+    width: 600px;
+    height: 130px;
+}
+
+.image-container .first{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    background-image:linear-gradient(rgba(228, 224, 224, 0.5),rgba(191, 189, 189, 0.5)), url(./first.webp);
+}
+.image-container .second{
+background-image:linear-gradient(rgba(228, 224, 224, 0.5),rgba(191, 189, 189, 0.5)), url(./second.webp);
+display: flex;
+flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image-container .third{
+background-image:linear-gradient(rgba(228, 224, 224, 0.5),rgba(191, 189, 189, 0.5)), url(./third.webp);
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image-container .fourth{
+background-image:linear-gradient(rgba(228, 224, 224, 0.5),rgba(191, 189, 189, 0.5)), url(./fifth.webp);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    width: 100%;
+}
+section .black{
+    width: 100%;
+    height: 75px;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+section .black div{
+    width: 280px;
+    height: 50px;
+    padding-left: 30px;
+   
+    box-shadow: 2px 0 10px #292c3d57;
+}
+section .black .first img{
+    height:31px;
+    width: 150px;
+    
+    object-fit: cover;
+    background-size: cover;
+}
+section .black .second img{
+    height:48px;
+    width: 200px;
+    object-fit: cover;
+    background-size: cover;
+}
+section .black .third img{
+    height:41px;
+    width: 150px;
+    object-fit: cover;
+    background-size: cover;
+   
+    
+}
+section .black .fourth img{
+    height:33px;
+    width: 158px;
+    object-fit: cover;
+    background-size: cover;
+}
+section .lower-black{
+    width: 780px;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   margin-left: 25%;
+}
+
+section .lower-black  h1{
+    font-family: Roboto,sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    height: 110px;
+    width: 525px;
+}
+section .lower-black  p{
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family: Roboto,sans-serif;
+    font-weight: 500;
+    color: #2f2e2e;
+}
+section .lower-black  p span{
+    color: red;
+}
+section .lower-black  p a{
+    color: red;
+}
+section .lower-black .third{
+    width: 70px;
+    margin-top: 25px;
+    height: 2px;
+    background-color: lightslategray;
+}
+.three-friend{
+    width: 100%;
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+}
+.three-friend .image{
+    width: 330px;
+    height: 330px;
+    margin-left: 10%;
+}
+.three-friend .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.three-friend .image img:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+.three-friend .content{
+    width: 38%;
+    margin-right: 10%;
+   
+}
+.three-friend .content h1{
+    font-family: Roboto,sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.three-friend .content h4{
+    font-family: Roboto,sans-serif;
+    margin-top: 15px;
+}
+.three-friend .content p{
+    font-size: 16px;
+    font-family: Roboto,sans-serif;
+    font-weight: 520;
+    color: #2f2e2e;
+    margin-top: 15px;
+    line-height: 25px;
+}
+.three-friend .content button{
+    margin-top: 20px;
+    height: 35px;
+    width: 130px;
+    color: white;
+    background-color: red;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 20px;
+    border: hidden;
+}
+.three-friend .content button:hover{
+    background-color: gray;
+    color: white;
+}
+.scooter{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+.scooter .scooter-image{
+    margin-right: 10%;
+}
+
+.scooter .content{
+    width: 35%;
+    margin-left: 12%;
+    margin-top: 13%;
+}
+.scooter .content h1{
+    font-family: Roboto,sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.scooter .content h4{
+    font-family: Roboto,sans-serif;
+    margin-top: 15px;
+}
+.scooter .content p{
+    font-size: 15px;
+    font-family: Roboto,sans-serif;
+    font-weight: 520;
+    color: #2f2e2e;
+    margin-top: 15px;
+    line-height: 20px;
+}
+.scooter .content button{
+    margin-top: 20px;
+    height: 35px;
+    width: 130px;
+    color: white;
+    background-color: red;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 20px;
+    border: hidden;
+}
+.scooter .content button:hover{
+    background-color: gray;
+    color: white;
+}
+.skateboard{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: space-between;
+}
+.skateboard .skateboard-image{
+    width: 580px;
+    height: 640px;
+    margin-left: 12%;
+
+}
+.skateboard .skateboard-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.skateboard .skateboard-image img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.skateboard .content{
+    width: 35%;
+    margin-right: 13%;
+    margin-top: 10%;
+}
+.skateboard .content h1{
+    font-family: Roboto,sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.skateboard .content p{
+    font-size: 15px;
+    font-family: Roboto,sans-serif;
+    font-weight: 520;
+    color: #2f2e2e;
+    margin-top: 15px;
+    line-height: 20px;
+}
+.skateboard .content h4{
+    font-family: Roboto,sans-serif;
+    margin-top: 15px;
+}
+.skateboard .content button{
+    margin-top: 20px;
+    height: 35px;
+    width: 130px;
+    color: white;
+    background-color: red;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 20px;
+    border: hidden;
+}
+.skateboard .content button:hover{
+    background-color: gray;
+    color: white;
+}
+.electric-scooter{
+    width: 100%;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+    background-image: url(./electric\ scooter.jpg);
+}
+.electric-scooter .content{
+    width: 35%;
+    text-align: center;
+    margin-top: 40px;
+}
+.electric-scooter .content h1{
+    font-family: Roboto,sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.electric-scooter .content p{
+    font-size: 17px;
+    font-family: Roboto,sans-serif;
+    font-weight: 600;
+    color: #070707;
+    margin-top: 15px;
+    line-height: 20px;
+}
+.electric-scooter .content button{
+    margin-top: 20px;
+    height: 35px;
+    width: 170px;
+    color: white;
+    background-color: red;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 20px;
+    border: hidden;
+}
+.electric-scooter .content button:hover{
+    background-color: gray;
+    color: white;
+}
+.iframe{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.iframe-lower{
+    width: 100%;
+    height: 605px;
+    text-align: center;
+    padding-top: 13%;
+    /* display: flex; */
+    /* justify-content: center; */
+    background-image: url(./lower\ iframe.jpg);
+    object-fit: cover;
+}
+.iframe-lower h1{
+    
+    margin-top: 15px;
+    color: white;
+    font-family: Roboto,sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    width: 500px;
+    margin-left: 34%;
+    
+}
+.iframe-lower h5{
+    font-size: 17px;
+    font-family: Roboto,sans-serif;
+    font-weight: 600;
+    color: white;
+
+}
+.iframe-lower p{
+    font-size: 17px;
+    font-family: Roboto,sans-serif;
+    font-weight: 600;
+    color: white;
+    margin-top: 10px;
+}
+.iframe-lower button{
+    margin-top: 20px;
+    height: 35px;
+    width: 170px;
+    color: white;
+    background-color: red;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 20px;
+    border: hidden;
+}
+.iframe-lower button:hover{
+    background-color: gray;
+    color: white;
+}
+.accessories{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.accessories h1{
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+    font-family: Roboto,sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+}
+.accessories h1:hover{
+    color: rgb(242, 30, 30);
+}
+.accessories .width{
+    width: 70px;
+    height: 2px;
+    background-color: grey;
+    margin-top: 10px;
+}
+.accessories .cart{
+    width: 95%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px; 
+    gap: 50px;
+    overflow-x: scroll;
+   
+}
+.accessories .cart .cart-item{
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 11%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+}
+.accessories .cart .cart-item .image{
+    width: 100%;
+    height: 50%;
+   
+}
+.accessories .cart .cart-item p{
+    margin-top: 35px;
+    color: rgb(226, 35, 35);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.accessories .cart .cart-item  span{
+text-align: center;
+font-weight: 600;
+}
+.accessories .cart .cart-item .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    
+}
+.subscribe{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #E5E5E5;
+    padding-left: 33%;
+    padding-right: 33%;
+   
+}
+.subscribe .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    padding-bottom: 20%;
+   
+}
+.subscribe h1{
+     margin-top: 45px;
+    color: rgb(0, 0, 0);
+    font-family: Roboto,sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+.subscribe .container span{
+    font-size: 16px;
+    font-weight: 500;
+   /* margin-top: -30px; */
+    color: #404040;
+    padding-bottom: 50px;
+}
+
+.subscribe .container h5{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: -70px;
+   text-align: left;
+   margin-left: 80px;
+   margin-bottom: 25px;
+   
+
+}
+.subscribe .container form{
+    margin-top:-60px;
+    margin-left: -40px;
+}
+.subscribe .container input{
+    width: 400px;
+    height: 45px;
+   /* margin-top: -10px; */
+   text-align: left;
+   margin-left: 80px;
+
+}
+.subscribe .container p{
+    width: 400px;
+    /* margin-top: -80px; */
+    font-size: 12px;
+    color: #404040;
+    margin-left: 80px;
+}
+.subscribe .container p a{
+    color: #404040;
+}
+.subscribe .container button{
+    width: 400px;
+    height: 50px;
+    padding: auto;
+    /* margin-top: -80px; */
+    margin-left: 80px;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(226, 35, 35);
+    border-radius: 5px;
+    border: hidden;
+}
+.subscribe .container button:hover{
+    background-color: #FF7765;
+}
+.subscribe .container span::before{
+    content: "\2217";
+    position: absolute;
+   margin-top: 30px;
+    color: #f5463b;
+}
+.icons{
+    width: 100%;
+    height: 360px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.icons .cart{
+    margin-top: 40px;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.icons .cart .image{
+    width: 40%;
+    height: 30%;
+}
+
+.icons .cart .image img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    
+}
+.icons .cart h1{
+   margin-top:10;
+    color: white;
+    font-family: Roboto,sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+.icons .cart p{
+    color: white;
+    font-family: Roboto,sans-serif;
+    margin-left: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.footer{
+    width: 100%;
+    height: 360px;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    
+}
+.footer .explore{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.footer .explore h3{
+    font-family: Roboto,sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.footer .explore ul{
+    margin-top: 20px;
+    list-style: none;
+    color: #2c2b2b;
+}
+.footer .usa{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer .usa h3{
+    font-family: Roboto,sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.footer .usa p{
+    margin-top: 20px;
+    
+    color: #2c2b2b;
+}
+.footer .usa ul{
+    margin-top: 20px;
+    list-style: none;
+    color: #2c2b2b;
+}
+.end{
+height: 80px;
+width: 100%;
+padding-left: 80px;
+padding-top: 10px;
+}
+.end a{
+    text-decoration: none;
+    color: #f5463b;
+}
